@@ -4,16 +4,26 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <title>BlogApp</title>
+
+    <!-- Google fonts -->
+    <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" %>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>BlogApp</title>
-
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
+    <%= stylesheet_link_tag 'fontawesome.css' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    
+    <!-- Blog-App CSS -->
+
+    <%= stylesheet_link_tag 'templatemo-stand-blog.css' %>
+    <%= stylesheet_link_tag 'owl.css' %>
+
+    <!-- JS -->
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
