@@ -8,6 +8,12 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+// import 'packs/accordions'
+// import 'packs/custom'
+// import 'packs/isotope'
+// import 'packs/owl'
+// import 'packs/slick'
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
