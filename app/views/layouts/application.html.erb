@@ -14,7 +14,7 @@
 
     <!-- Bootstrap CSS -->
     <%= stylesheet_link_tag 'bootstrap.min.css' %>
-    
+
     <%= stylesheet_link_tag 'fontawesome.css' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
@@ -28,13 +28,12 @@
   </head>
 
   <body>
+
     <%= render 'layouts/header' %>
     <%= yield %>
     <%= render 'layouts/footer' %>
 
 
-
- 
     <%= javascript_pack_tag 'custom' %>
     <%= javascript_pack_tag 'owl' %>
     <%= javascript_pack_tag 'slick' %>
