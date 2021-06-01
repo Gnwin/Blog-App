@@ -14,6 +14,8 @@ import "channels"
 // import 'packs/owl'
 // import 'packs/slick'
 
+
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
