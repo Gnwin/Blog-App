@@ -14,7 +14,7 @@ import "channels"
 // import 'packs/owl'
 // import 'packs/slick'
 
-
+require("jquery")
 
 Rails.start()
 Turbolinks.start()

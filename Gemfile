@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -43,6 +43,7 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'jquery-rails'
 
 group :development, :test do
+  gem 'pry'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -68,3 +69,36 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+<header class="">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><h2>Stand Blog<em>.</em></h2></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <%= link_to "Home", root_path, class:"nav-link " + current_class?(root_path) %>
+              <span class="sr-only">(current)</span>
+            </a>
+          </li> 
+          <li class="nav-item">
+            <%= link_to "About Us", about_path, class:"nav-link " + current_class?(about_path) %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Blog Entries", blog_path, class:"nav-link " + current_class?(blog_path) %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "postdetails", postdetails_path, class:"nav-link " + current_class?(postdetails_path) %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Contact Us", contact_path, class:"nav-link " + current_class?(contact_path) %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

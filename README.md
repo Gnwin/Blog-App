@@ -25,3 +25,41 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+
+
+
+Blog App
+
+
+User
+ - username
+ - email
+ - password
+ - has_many :posts
+ - has_many :comments
+ - has_many :categories through: :posts
+ - has_many :commented_posts, through: :comments
+
+
+Post   * join table joining categories and users
+ - title
+ - content
+ - has_many :comments
+ - belongs_to :user
+ - belongs_to :category
+ - has_many :users, through: :comments 
+
+
+
+Comment * join table joining users and posts
+ - content
+ - belongs_to :user
+ - belongs_to :post
+
+
+categories
+ - name
+ - has_many :posts
+ - has_many :users, through: :posts

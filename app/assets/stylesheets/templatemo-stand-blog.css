@@ -160,7 +160,7 @@ header .navbar {
 }
 
 .owl-banner .item .item-content ul li:last-child::after {
-	display: block;
+	display: none;
 }
 
 .owl-banner .item .item-content ul li a {
