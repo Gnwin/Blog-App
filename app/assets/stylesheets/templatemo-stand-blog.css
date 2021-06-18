@@ -28,7 +28,7 @@ header .navbar {
 .background-header {
 	top: 0;
 	height: 80px;
-	position: fixed;
+	/* position: fixed; */
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
 }
 .background-header .navbar-brand h2 {

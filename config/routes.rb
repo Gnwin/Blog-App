@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :posts
   resources :categories
   resources :users
-  
+
   root "sessions#home"
 
   get  "/signup", to: "users#new"
@@ -14,8 +14,7 @@ Rails.application.routes.draw do
   
   delete "/logout", to: "sessions#destroy"
 
-  # root 'posts#index'
-  # get "/posts", to: "posts#index"
+
   # get "/about", to: "pages#about"
   # get "/blog", to: "pages#blog"
   # get "/postdetails", to: "pages#postdetails"
