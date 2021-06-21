@@ -17,10 +17,8 @@ ActiveRecord::Schema.define(version: 2021_06_15_151328) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
-    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_categories_on_user_id"
   end
 
   create_table "comments", force: :cascade do |t|
@@ -36,8 +34,8 @@ ActiveRecord::Schema.define(version: 2021_06_15_151328) do
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.text "content"
-    t.bigint "user_id", null: false
-    t.bigint "category_id", null: false
+    t.bigint "user_id"
+    t.bigint "category_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["category_id"], name: "index_posts_on_category_id"
@@ -52,7 +50,6 @@ ActiveRecord::Schema.define(version: 2021_06_15_151328) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "categories", "users"
   add_foreign_key "comments", "posts"
   add_foreign_key "comments", "users"
   add_foreign_key "posts", "categories"
