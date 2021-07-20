@@ -63,3 +63,15 @@ categories
  - name
  - has_many :posts
  - has_many :users, through: :posts
+
+
+
+'/users'
+
+'/users/:id/posts'
+'/users/:id/comments'
+
+
+'/posts'
+
+'/posts/:id/comments'

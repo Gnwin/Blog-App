@@ -1,6 +1,10 @@
 class PostsController < ApplicationController
   before_action :redirect_if_not_logged_in
 
+  def index
+    @posts = Post.all
+  end
+
   def new
     @post = Post.new
   end

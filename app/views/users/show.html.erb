@@ -240,7 +240,7 @@
             </div>
             <div class="col-lg-12">
               <div class="main-button">
-                <a href="blog.html">View All Posts</a>
+                <%= link_to "View All Posts", posts_path %>
               </div>
             </div>
           </div>
@@ -327,3 +327,4 @@
 
 <%= link_to "Add a post", new_post_path %>
 <%= link_to "All posts", posts_path %>
+<%= link_to "Add a comment", new_comment_path %>
